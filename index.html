@@ -1,9 +1,137 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>hello</title>
-</head>
-<body>
-	hello
-</body>
+  <head>
+  	<title>Escalier</title>
+  	<style>
+  		body, html {
+  			margin: 0;
+  			padding: 0;
+  		}
+
+  		#wrap {
+  			max-width: 1200px;
+  			margin: 0 auto;
+  		}
+
+  		nav {
+  			margin: 20px 20px 0 20px;
+  			display: flex;
+  			justify-content: space-around;
+  			background-color: black;
+  			color: white;
+  			height: 100px;
+  			line-height: 100px;
+  		}
+
+  		nav a {
+  			color: white;
+  			text-decoration: none;
+  			flex-grow: 1;
+  			text-align: center;
+  			font-size: 30px;
+  		}
+
+  		#content > section {
+  			min-height: 100vh;
+  		}
+
+  		#top {
+  			height: 800px;
+  			display: flex;
+  			flex-direction: column;
+  			justify-content: space-around;
+  		}
+
+  		#logo-arrangement {
+  			display: flex;
+  			justify-content: space-between;
+  			margin: 0 40px;
+  		}
+
+  		#logo-arrangement div {
+  			height: 15px;
+  			background-color: black;
+  			flex-grow: 1;
+  			margin-top: 150px;
+  		}
+
+  		#top img[src="img/logo.png"] {
+  			width: 294px;
+  			height: 273px;
+  			margin: 0 auto;
+  		}
+
+  		#carousel {
+  			margin: 0 40px;
+  			height: 400px;
+  		}
+
+  		#carousel img {
+  			display: none;
+  		}
+  	</style>
+  </head>
+  <body>
+    <div id="wrap">
+      <nav>
+      	<a href="#news">News</a>
+      	<a href="#titles">Titles</a>
+      	<a href="#prints">Prints</a>
+      	<a href="#order">Order</a>
+      	<a href="#contact">Contact</a>
+      </nav>
+      <div id="content">
+      	<section id="top">
+      		<div id="logo-arrangement">
+      			<div></div><img src="img/logo.png" alt="escalier"/><div></div>
+      		</div>
+      		<div id="carousel">
+      			<img src="img/lamp.png" />
+      			<img src="img/dog.png" />
+      		</div>
+      	</section>
+      	<section id="titles">
+      		<h1>Titles</h1>
+      	</section>
+      	<section id="prints">
+      		<h1>Prints</h1>
+      	</section>
+      	<section id="order">
+      		<h1>Order</h1>
+      	</section>
+      	<section id="contact">
+      		<h1>Contact</h1>
+      	</section>
+      </div>
+    </div>
+    <script>
+    	function carousel( domNode, delay ) {
+    		var defaultStyle = {
+    			'background-size': 'contain',
+    			'background-position': 'center'
+    		};
+
+    		var sources = [];
+
+    		[].forEach.call( domNode.children, node => sources.push( node.src ) );
+
+    		step();
+
+    		function step() {
+    			var source = sources.shift();
+
+    			domNode.style.backgroundImage = 'url(' + source + ')';
+		  		domNode.style.backgroundSize = 'contain';
+		  		domNode.style.backgroundPosition = 'center';
+		  		domNode.style.backgroundRepeat = 'no-repeat';
+
+		  		sources.push( source );
+
+		  		setTimeout( step, delay );
+    		}
+    	}
+
+    	carousel( document.getElementById( 'carousel' ), 5000 );
+    </script>
+  </body>
 </html>
