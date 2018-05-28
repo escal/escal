@@ -94,3 +94,7 @@ p.indent {
 	margin-left: 40px;
 	margin-right: 40px;
 }
+
+.spaced-image {
+	width: calc( 100% - 220px );
+}
