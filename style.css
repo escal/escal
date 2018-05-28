@@ -40,6 +40,7 @@ nav a {
 #content > section:after {
 	height: 15px;
 	background-color: black;
+	margin: 0 40px 10px;
 	content: '';
 }
 
