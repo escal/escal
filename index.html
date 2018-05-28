@@ -50,7 +50,7 @@
 
     		var sources = [];
 
-    		[].forEach.call( domNode.children, node => sources.push( node.src ) );
+    		[].forEach.call( domNode.children, function( node ){ { sources.push( node.src ); } );
 
     		step();
 
