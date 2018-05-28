@@ -47,12 +47,12 @@ nav a {
 	height: 15px;
 	background-color: black;
 	flex-grow: 1;
-	margin-top: 150px;
+	margin-top: 125px;
 }
 
 #top img[src="img/logo.png"] {
-	width: 294px;
-	height: 273px;
+	width: 246px;
+	height: 234px;
 	margin: 0 auto;
 }
 
@@ -63,4 +63,8 @@ nav a {
 
 #carousel img {
 	display: none;
+}
+
+h1 {
+	text-align: center;
 }
