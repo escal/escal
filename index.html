@@ -27,71 +27,11 @@
       			<img src="img/00-rocky.png" />
       		</div>
       	</section>
-        <section id="news">
-          <h1>News</h1>
-          <p>New release available from june 2018:</p>
-          <p>ITALIA INCITATUS</p>
-		<p>A DARKER SIDE OF ITALY - Traveling from Venice to Sicily</p>
-		<p>Our first book in full colour</p>
-		<p>containing 146 original pictures on high quality paper</p>
-          <div class="center">
-            <img src="img/01-incitatus.png" alt="Italia Incitatus"/>
-          </div>
-        </section>
-      	<section id="titles">
-      		<h1>Titles</h1>
-      	</section>
-      	<section id="prints">
-      		<h1>Prints</h1>
-      	</section>
-      	<section id="order">
-      		<h1>Order</h1>
-      	</section>
-      	<section id="contact">
-      		<h1>Contact</h1>
-      	</section>
       </div>
     </div>
+    <script src="carousel.js"></script>
     <script>
-    	function carousel( domNode, delay ) {
-    		var defaultStyle = {
-    			'background-size': 'contain',
-    			'background-position': 'center'
-    		};
-
-    		var sources = [];
-
-    		[].forEach.call( domNode.children, function( node ){ sources.push( node.src ); } );
-
-    		step();
-
-    		function step() {
-    			var source = sources.shift();
-
-    			domNode.style.backgroundImage = 'url(' + source + ')';
-		  		domNode.style.backgroundSize = 'contain';
-		  		domNode.style.backgroundPosition = 'center';
-		  		domNode.style.backgroundRepeat = 'no-repeat';
-
-		  		sources.push( source );
-
-		  		setTimeout( step, delay );
-    		}
-    	}
-
     	carousel( document.getElementById( 'carousel' ), 5000 );
-
-      // var lastScrollPosition;
-      // window.addEventListener('scroll', function( event ) {
-      //   var position = window.scrollY;
-
-      //   var difference = position - lastScrollPosition;
-
-      //   console.log(difference);
-
-      //   lastScrollPosition = position;
-      //   console.log(position);
-      // } );
     </script>
   </body>
 </html>
