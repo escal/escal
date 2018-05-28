@@ -37,6 +37,12 @@ nav a {
 	min-height: 100vh;
 }
 
+#content > section:after {
+	height: 15px;
+	background-color: black;
+	content: '';
+}
+
 #top {
 	height: 800px;
 	display: flex;
@@ -57,7 +63,7 @@ nav a {
 	margin-top: 125px;
 }
 
-#top img[src="img/logo.png"] {
+#logo-arrangement img[src="img/logo.png"] {
 	width: 246px;
 	height: 234px;
 	margin: 0 auto;
