@@ -97,3 +97,7 @@ p.indent {
 .spaced-image {
 	width: calc( 100% - 220px );
 }
+
+.book:not(:first-child) {
+	margin-top: 80px;
+}
