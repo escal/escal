@@ -37,13 +37,6 @@ nav a {
 	min-height: 100vh;
 }
 
-#content > section:after {
-	height: 15px;
-	background-color: black;
-	margin: 0 40px 10px;
-	content: '';
-}
-
 #top {
 	height: 800px;
 	display: flex;
