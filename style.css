@@ -54,7 +54,7 @@ nav a {
 #logo-arrangement {
 	display: flex;
 	justify-content: space-between;
-	margin: 0 40px;
+	margin: 20px 40px 0;
 }
 
 #logo-arrangement div {
@@ -84,7 +84,11 @@ h1 {
 }
 
 p {
-	margin: 10px 40px;
+	margin: 20px 80px;
+}
+
+p.indent {
+	margin-left: 120px;
 }
 
 .center {
