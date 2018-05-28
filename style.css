@@ -75,3 +75,11 @@ nav a {
 h1 {
 	text-align: center;
 }
+
+p {
+	margin: 10px 40px;
+}
+
+.center {
+	text-align: center;
+}
