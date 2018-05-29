@@ -1,9 +1,4 @@
 function carousel( domNode, delay ) {
-	var defaultStyle = {
-		'background-size': 'contain',
-		'background-position': 'center'
-	};
-
 	var sources = [];
 
 	[].forEach.call( domNode.children, function( node ){ sources.push( node.src ); } );
