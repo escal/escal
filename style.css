@@ -22,8 +22,6 @@ body, html {
 header {
 	display: flex;
 	padding: 10px;
-	flex-basis: 70px;
-	flex-shrink: 0;
 }
 
 header a.logo {
@@ -77,8 +75,7 @@ nav a {
 	margin: 0 auto;
 }
 
-.carousel {
-	margin: 0 40px;
+#carousel {
 	height: 400px;
 }
 
